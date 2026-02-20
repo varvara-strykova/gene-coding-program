@@ -1,11 +1,3 @@
-'''
-This proramm;
-1. processes raw dna strands and turns them into chains.
-2. cleans the data and recombines it to the dna strands
-3. evaluates the stabillity of the synthetic dna chain and determines its viabillity. If chain is too weak,
- it undergoes mutation. Two codon samples are generated
-4. determines which chains are viable for future cloning and which collapse due to instabillity or over mutation
-'''
 
 def read_dna(filename):
     # reads the file and returns the data without empty lines and 'ERROR' strings
@@ -122,6 +114,4 @@ def main():
         result = compare_chains(chain_1, chain_2)
         print(result)
         print()
-        
-    
 main()
